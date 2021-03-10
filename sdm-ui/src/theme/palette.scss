@@ -1,0 +1,25 @@
+$lighter: #ecf3f1;
+$light: #e6efe9;
+$lightDarker: #d2dad4;
+$primaryLighter: #b9dad2;
+$primary: #99c1b7;
+$primaryDarker: #7c9b93;
+$secondary: #8cbcb9;
+$danger: #ff6b6b;
+$attention: #dda448;
+$dark: #3d3e3d;
+$blue: #3680ad;
+
+:export {
+  lighter: $lighter;
+  light: $light;
+  lightDarker: $lightDarker;
+  primaryLighter: $primaryLighter;
+  primary: $primary;
+  primaryDarker: $primaryDarker;
+  secondary: $secondary;
+  danger: $danger;
+  attention: $attention;
+  dark: $dark;
+  blue: $blue;
+}

@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: ToyRobots;
+  src: url(./assets/fonts/WhenToyRobotsAttack-yKAV.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+html,
+body {
+  position: relative;
+  background-color: rgb(245, 245, 245);
+  height: 100%;
+  font-family: ToyRobots, Roboto, "Helvetica Neue", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+.container,
+#root {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}

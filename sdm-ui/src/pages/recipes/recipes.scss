@@ -1,0 +1,10 @@
+@import "../../theme/palette.scss";
+
+.recipeGrid {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 2rem 2rem;
+  overflow: hidden;
+}

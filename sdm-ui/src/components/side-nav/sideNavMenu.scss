@@ -1,0 +1,63 @@
+@import "../../theme/palette.scss";
+
+.main-menu {
+  position: fixed;
+  top: auto;
+  bottom: auto;
+  width: 300px;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+  border-top: 1px solid $primaryLighter;
+  border-right: 1px solid $primaryLighter;
+  background-color: $lighter;
+  z-index: 9000;
+
+  @media (max-width: 576px) {
+    width: 100%;
+  }
+}
+.main-menu.show {
+  transform: translate(0);
+}
+
+.main-menu.hide {
+  transform: translateX(-300%);
+}
+
+.list-item {
+  background-color: $lighter;
+  letter-spacing: 1.2px;
+  padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+  list-style: none;
+  a {
+    color: $primaryDarker;
+  }
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+.list-group {
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  p {
+    letter-spacing: 1.2px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0.5rem 1.5rem 0.5rem 1.2rem;
+    background-color: $lightDarker;
+    color: $primaryDarker;
+  }
+}
+
+.list-item.breadcrumb-li {
+  display: inline;
+  padding: 0.5rem 0;
+  &:after {
+    margin: 0 1.2rem;
+    content: \002f;
+    color: $attention;
+  }
+}

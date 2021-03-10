@@ -1,0 +1,16 @@
+@import "../../theme/palette.scss";
+
+.card {
+    width: 450px;
+    height: 500px;
+    margin: auto;
+}
+.image {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
+.actions {
+    position: absolute;
+    bottom: 0px;
+}

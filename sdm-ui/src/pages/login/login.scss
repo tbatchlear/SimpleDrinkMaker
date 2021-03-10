@@ -1,0 +1,17 @@
+.sign-up {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  small {
+    margin-left: 10px;
+    font-family: "Roboto";
+  }
+}
+
+.login-error {
+  margin-top: 10px;
+  small {
+    color: red;
+    font-family: "Roboto";
+  }
+}

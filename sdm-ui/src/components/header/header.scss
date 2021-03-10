@@ -1,0 +1,69 @@
+@import "../../theme/palette.scss";
+
+.logo {
+  width: 64px;
+}
+
+.span-thin {
+  font-size: 32px;
+  color: $primary;
+  padding: 1rem 0 0.5rem 1rem;
+}
+
+.span-bold {
+  @extend .span-thin;
+  font-weight: bold;
+}
+
+.span-after {
+  @extend .span-bold;
+  padding: 1rem 1rem 0.5rem 0.2rem;
+  @media (max-width: 576px) {
+    display: none;
+  }
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-delay: 0.1s;
+  transition: transform 0.1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  background-color: $lighter;
+}
+
+#header.hide {
+  transform: translate3d(0, -100vh, 0);
+  overflow: hidden;
+  animation: slide-out 0.4s;
+}
+
+#header.show {
+  transform: translate3d(0, 0vh, 0);
+  animation: slide-in 0.4s;
+}
+
+@keyframes slide-in {
+  0% {
+    -webkit-transform: translateY(-10px) scaleY(1.8);
+    transform: translateY(-10px) scaleY(1.8);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-filter: blur(8px);
+    filter: blur(8px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1);
+    transform: translateY(0) scaleY(1);
+    transform: translateY(0) scaleY(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-out {
+}

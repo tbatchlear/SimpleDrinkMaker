@@ -1,0 +1,11 @@
+export const $lighter = "#ECF3F1";
+export const $light = "#E6EFE9";
+export const $lightDarker = "#D2DAD4";
+export const $primaryLighter = "#B9DAD2";
+export const $primary = "#99c1b7";
+export const $primaryDarker = "#7c9b93";
+export const secundary = "#8CBCB9";
+export const $danger = "#FF6B6B";
+export const $attention = "#DDA448";
+export const $dark = "#3D3E3D";
+export const $blue = "#3680AD";

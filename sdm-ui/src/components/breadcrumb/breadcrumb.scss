@@ -1,0 +1,35 @@
+@import "../../theme/palette.scss";
+
+.breadcrumb-nav {
+  width: 100%;
+  position: relative;
+  background-color: $lighter;
+}
+.breadcrumb-ul {
+  padding: 0.5rem 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+.breadcrumb-li {
+  align-items: center;
+  justify-content: center;
+  display: inline;
+  padding: 0.5rem 0;
+  color: $attention;
+  &:after {
+    margin: 0 1.2rem;
+    content: "\002F";
+    color: $attention;
+  }
+  &:last-child:after {
+    margin-right: 0;
+    content: none;
+  }
+  a {
+    color: $attention;
+  }
+}
